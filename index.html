@@ -1,0 +1,126 @@
+<head>
+	<link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body onload = "showSection('.take-orders')">
+  <div class="navbar">
+    <p id="logo"> 🍦🍨🍦🍨 </p>
+    <p id = 'take-orders-nav' onClick="showSection('.take-orders')"> Take Orders </p>
+    <p id = 'make-orders-nav' onClick="showSection('.make-orders')"> Make Orders </p>
+    <p id = 'cash-orders-nav' onClick="showSection('.cash-orders')"> Cash Out </p>
+  </div>
+
+  <div class = 'slide-container'>
+    <div class="section take-orders">
+      <div class="order-options">
+        <div class="order-category">
+          <h3>Size:</h3>
+          <div class="order-choices">
+            <p>Small</p>
+            <p>Medium</p>
+            <p>Large</p>
+          </div>
+        </div>
+    
+        <div class="order-category">
+          <h3>Flavor:</h3>
+          <div class="order-choices">
+            <p>Vanilla</p>
+            <p>Chocolate</p>
+            <p>Twist</p>
+          </div>
+        </div>
+    
+        <div class="order-category">
+          <h3>In:</h3>
+          <div class="order-choices">
+            <p>Dish</p>
+            <p>Cone</p>
+          </div>
+        </div>
+    
+        <div class="order-category">
+          <h3 class>Toppings:</h3>
+          <div class="order-choices">
+            <p>Enter Here</p>
+          </div>
+        </div>
+    
+        <p class="action-button" id="add-item-button">Add Item</p>
+      </div>
+    
+      <div class="order-summary">
+        <div class="order-info">
+          <h2 class="order-number"> Order Number: 1002 </h2>
+        </div>
+    
+        <h3> Comments: </h3>
+        <div class="order-category" id="comments-container">
+          <div class="order-choices">
+            <p id="comments"> Nut Allergy. </p>
+          </div>
+        </div>
+    
+        <p class="action-button" id="submit-order-button"> Submit Order </p>
+      </div>
+    </div>
+
+
+    <div class="section make-orders">
+      <div class="order-checklist">
+        <div class="order-category">
+          <h3 class="order-category-title">Order 1002:</h3>
+          <div class="order-choices">
+            <p>Small, Twist, Dish, Hot Fudge</p>
+          </div>
+        </div>
+        
+        <div class="order-category">
+          <h3 class="order-category-title">Order 1003:</h3>
+          <div class="order-choices">
+            <p>Large, Twist, Dish, Cherries</p>
+            <p>Small, Vanilla, Cone, Rainbow Sprinkles + Chocolate Sprinkles</p>
+          </div>
+        </div>
+        
+        <div class="order-category">
+          <h3 class="order-category-title">Order 1004:</h3>
+          <div class="order-choices">
+            <p>Medium, Chocolate, Dish, M&Ms</p>
+            <p>Large, Twist, Dish, Hot Fudge + Rainbow Sprinkles</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="section cash-orders">
+      <div class="order-totals">
+        <div class="order-category">
+          <h3 class="order-category-title">Order 1002:</h3>
+          <div class="order-choices">
+            <p class="total">Total: $4</p>
+            <p>Cash Out</p>
+          </div>
+        </div>
+      
+        <div class="order-category">
+          <h3 class="order-category-title">Order 1003:</h3>
+          <div class="order-choices">
+            <p class="total">Total: $9</p>
+            <p>Cash Out</p>
+          </div>
+        </div>
+      
+        <div class="order-category">
+          <h3 class="order-category-title">Order 1004:</h3>
+          <div class="order-choices">
+            <p class="total">Total: $10</p>
+            <p>Cash Out</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
