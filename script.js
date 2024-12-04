@@ -17,4 +17,11 @@ function showSection(sectionName) {
   const targetOffset = sectionOffsets[sectionName];
   
   document.querySelector(".frieze").style.transform = `translateX(${targetOffset * -33.333}%)`;
+  
+  document.querySelectorAll(".header-container h1").forEach(header => {
+    header.style.top = "-100px";
+    header.style.opacity = "0";
+  });
+  document.querySelector(`#${sectionName.slice(1)}-header`).style.top = "0px";
+  document.querySelector(`#${sectionName.slice(1)}-header`).style.opacity = "1";
 }
