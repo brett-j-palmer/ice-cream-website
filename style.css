@@ -10,28 +10,45 @@ body {
   background-size: 100% 100%;
 }
 
-.section,
+.frame,
 .navbar {
-  margin: 20px 2vw;
+  margin: 20px auto;
+  width: 95vw;
   border-radius: 30px;
   box-sizing: border-box;
   border: solid 2px hsl(210, 100%, 20%);
   background-color: hsl(210, 100%, 90%);
   opacity: 0.95;
+  overflow: hidden;
+}
+
+.frieze {
+  display: flex;
+  width: 300%;
+  transition: transform .5s ease-in ;
 }
 
 .section {
-  padding: 1.5em;
+  display: flex;
+  padding: 2em;
   gap: 2%;
   margin-top: 0;
   margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 80vh;
+  justify-content: center;
+  align-items: stretch;
 }
+
+
 
 .navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100px;
+  min-height: 100px;
+  height: 10vh;
   padding: 0 2%;
   text-align: center;
   gap: 5%;
@@ -63,8 +80,9 @@ body {
 .order-summary,
 .order-checklist,
 .order-totals {
-  width: 100%;
+  width: 90%;
   min-height: 500px;
+  height: 100%;
   border: solid 2px hsl(210, 100%, 20%);
   display: flex;
   flex-direction: column;
@@ -72,15 +90,10 @@ body {
   gap: 1em;
   padding: 2%;
   background-color: hsl(0, 0%, 100%);
-  font-size: 1.25em;
+  font-size: 1.5em;
   border-radius: 30px;
   box-sizing: border-box;
   box-shadow: 5px 5px 12px hsl(210, 100%, 70%);
-}
-
-.order-options,
-.order-summary {
-  width: 50%;
 }
 
 .order-summary{
