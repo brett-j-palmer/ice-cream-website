@@ -240,12 +240,8 @@ h3 {
   font-size: 2em;
   width: 100%;
   text-align: center;
-  opacity: 0;                /* For initial transition */
+  opacity: 0;               
   transition: ease-in 0.75s all;
-  position: absolute;          /* Remove absolute positioning */
+  top: -100px;
+  position: absolute;         
 }
-/* .frame h1{
-  text-align: center;
-  font-size: 2em;
-  text-decoration: underline;
-} */

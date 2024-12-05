@@ -1,12 +1,12 @@
 function showSection(sectionName) {
   document.querySelectorAll('.navbar p').forEach(navItem => {
     navItem.style.flex = "1";
-    navItem.style.fontSize = "1.5em";
+    navItem.style.fontSize = "1.6em";
   });
 
   const clickedItem = document.querySelector(`#${sectionName.slice(1)}-nav`);
   clickedItem.style.flex = "1.25";
-  clickedItem.style.fontSize = '1.75em';
+  clickedItem.style.fontSize = '1.95em';
 
   const sectionOffsets = {
     ".take-orders": 0,
