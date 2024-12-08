@@ -10,7 +10,7 @@
   }
 }
 
-p, h3, h2, h1{
+.navbar p, #submit-order-button, p, h3, h2, h1{
   font-family: 'Roboto', sans-serif;
   color: hsl(210, 100%, 20%);
 }
