@@ -5,10 +5,16 @@
 
 <body onload = "showSection('.take-orders')">
   <div class="navbar">
-    <p id="logo"> 🍦🍨🍦🍨 </p>
-    <p id = 'take-orders-nav' onClick="showSection('.take-orders')"> Take Orders </p>
-    <p id = 'make-orders-nav' onClick="showSection('.make-orders')"> Make Orders </p>
-    <p id = 'cash-orders-nav' onClick="showSection('.cash-orders')"> Cash Out </p>
+    
+
+    <div id="logo-container">
+      <img src="https://brett-j-palmer.com/images/ice-cream-cone.svg" class="logo" alt="Ice Cream Cone Logo">
+      <p>Brett's Ice Cream POS</p>
+      <img src="https://brett-j-palmer.com/images/ice-cream-cone.svg" class="logo" alt="Ice Cream Cone Logo">
+    </div>
+    <p class = 'nav-p' id = 'take-orders-nav' onClick="showSection('.take-orders')"> Take Orders </p>
+    <p class = 'nav-p' id = 'make-orders-nav' onClick="showSection('.make-orders')"> Make Orders </p>
+    <p class = 'nav-p' id = 'cash-orders-nav' onClick="showSection('.cash-orders')"> Cash Out </p>
   </div>
 
   <div class = 'frame'>
@@ -52,8 +58,6 @@
               <p>Enter Here</p>
             </div>
           </div>
-      
-          <!-- <p class="action-button" id="add-item-button">Add Item</p> -->
         </div>
       
         <div class="order-summary">
@@ -61,8 +65,8 @@
             <h2 class="order-number"> Order Number: 1002 </h2>
           </div>
       
-          <h3> Comments: </h3>
           <div class="order-category" id="comments-container">
+            <h3> Comments: </h3>
             <div class="order-choices">
               <p id="comments"> Nut Allergy. </p>
             </div>
@@ -78,23 +82,55 @@
           <div class="order-category">
             <h3 class="order-category-title">Order 1002:</h3>
             <div class="order-choices">
-              <p>Small, Twist, Dish, Hot Fudge</p>
+              <p>Small, Twist, Cone</p>
             </div>
           </div>
           
           <div class="order-category">
             <h3 class="order-category-title">Order 1003:</h3>
             <div class="order-choices">
-              <p>Large, Twist, Dish, Cherries</p>
-              <!-- <p>Small, Vanilla, Cone, Rainbow Sprinkles + Chocolate Sprinkles</p> -->
+              <p>Medium, Twist, Dish, Cherries</p>
             </div>
           </div>
           
           <div class="order-category">
             <h3 class="order-category-title">Order 1004:</h3>
             <div class="order-choices">
+              <p>Large, Chocolate, Dish, M&Ms</p>
+            </div>
+          </div>
+
+          <div class="order-category">
+            <h3 class="order-category-title">Order 1005:</h3>
+            <div class="order-choices">
+              <p>Small, Chocolate, Dish, Hot Fudge</p>
+            </div>
+          </div>
+          <div class="order-category">
+            <h3 class="order-category-title">Order 1006:</h3>
+            <div class="order-choices">
+              <p>Medium, Twist, Cone</p>
+            </div>
+          </div>
+          
+          <div class="order-category">
+            <h3 class="order-category-title">Order 1007:</h3>
+            <div class="order-choices">
+              <p>Medium, Twist, Dish, Cherries</p>
+            </div>
+          </div>
+          
+          <div class="order-category">
+            <h3 class="order-category-title">Order 1008:</h3>
+            <div class="order-choices">
               <p>Medium, Chocolate, Dish, M&Ms</p>
-              <!-- <p>Large, Twist, Dish, Hot Fudge + Rainbow Sprinkles</p> -->
+            </div>
+          </div>
+
+          <div class="order-category">
+            <h3 class="order-category-title">Order 1009:</h3>
+            <div class="order-choices">
+              <p>Small, Chocolate, Dish, Hot Fudge</p>
             </div>
           </div>
         </div>
@@ -110,7 +146,6 @@
               <p>Cash Out</p>
             </div>
           </div>
-        
           <div class="order-category">
             <h3 class="order-category-title">Order 1003:</h3>
             <div class="order-choices">
@@ -118,11 +153,45 @@
               <p>Cash Out</p>
             </div>
           </div>
-        
           <div class="order-category">
             <h3 class="order-category-title">Order 1004:</h3>
             <div class="order-choices">
               <p class="total">Total: $10</p>
+              <p>Cash Out</p>
+            </div>
+          </div>
+          <div class="order-category">
+            <h3 class="order-category-title">Order 1005:</h3>
+            <div class="order-choices">
+              <p class="total">Total: $6</p>
+              <p>Cash Out</p>
+            </div>
+          </div>
+          <div class="order-category">
+            <h3 class="order-category-title">Order 1006:</h3>
+            <div class="order-choices">
+              <p class="total">Total: $6</p>
+              <p>Cash Out</p>
+            </div>
+          </div>
+          <div class="order-category">
+            <h3 class="order-category-title">Order 1007:</h3>
+            <div class="order-choices">
+              <p class="total">Total: $9</p>
+              <p>Cash Out</p>
+            </div>
+          </div>
+          <div class="order-category">
+            <h3 class="order-category-title">Order 1008:</h3>
+            <div class="order-choices">
+              <p class="total">Total: $8</p>
+              <p>Cash Out</p>
+            </div>
+          </div>
+          <div class="order-category">
+            <h3 class="order-category-title">Order 1009:</h3>
+            <div class="order-choices">
+              <p class="total">Total: $6</p>
               <p>Cash Out</p>
             </div>
           </div>
