@@ -1,5 +1,5 @@
 function showSection(sectionName) {
-  document.querySelectorAll('.navbar p').forEach(navItem => {
+  document.querySelectorAll('.nav-p').forEach(navItem => {
     navItem.style.flex = "1";
     navItem.style.fontSize = "1.6em";
   });

@@ -87,15 +87,12 @@ body {
 #logo-container {
   display: flex;
   align-items: center;
-  gap: 5%; 
-  width: 25%; 
-  min-width: 200px;
-  flex-wrap: wrap; 
+  gap: 3%; 
 }
 
 #logo-container p {
   font-weight: bold;
-  flex-grow: 1;
+  font-size: 1.95em;
 }
 
 #logo-container .logo {
