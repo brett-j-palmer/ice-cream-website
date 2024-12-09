@@ -1,12 +1,14 @@
+currentOffset = 0
+
 function showSection(sectionName) {
   document.querySelectorAll('.nav-p').forEach(navItem => {
     navItem.style.flex = "1";
-    navItem.style.fontSize = "1.6em";
+    navItem.style.fontSize = "1.5em";
   });
 
   const clickedItem = document.querySelector(`#${sectionName.slice(1)}-nav`);
   clickedItem.style.flex = "1.25";
-  clickedItem.style.fontSize = '1.95em';
+  clickedItem.style.fontSize = '1.7em';
 
   const sectionOffsets = {
     ".take-orders": 0,
@@ -14,7 +16,7 @@ function showSection(sectionName) {
     ".cash-orders": 2
   };
 
-  const targetOffset = sectionOffsets[sectionName];
+  let targetOffset = sectionOffsets[sectionName];
   
   document.querySelector(".frieze").style.transform = `translateX(${targetOffset * -33.333}%)`;
   
@@ -24,4 +26,5 @@ function showSection(sectionName) {
   });
   document.querySelector(`#${sectionName.slice(1)}-header`).style.top = "0px";
   document.querySelector(`#${sectionName.slice(1)}-header`).style.opacity = "1";
+  currentOffset = targetOffset
 }

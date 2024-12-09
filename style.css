@@ -4,12 +4,6 @@
   margin: 0
 }
 
-@media (max-width: 800px) {
-  .section p {
-    font-size: 0.8em;
-  }
-}
-
 .navbar p, #submit-order-button, p, h3, h2, h1{
   font-family: 'Roboto', sans-serif;
   color: hsl(210, 100%, 20%);
@@ -56,7 +50,7 @@ body {
   display: flex;
   height: 80%;
   width: 300%;
-  transition: transform .75s ease-in ;
+  transition: transform 1s ease-in ;
 }
 
 .section {
@@ -92,7 +86,7 @@ body {
 
 #logo-container p {
   font-weight: bold;
-  font-size: 1.95em;
+  font-size: 1.9em;
 }
 
 #logo-container .logo {
@@ -107,7 +101,7 @@ body {
   border-radius: 30px;
   background-color: hsl(0, 0%, 100%);
   flex: 1;
-  transition: flex 0.5s ease-in-out, font-size 0.5s ease-in-out;
+  transition: flex 1s ease-in-out, font-size 0.5s ease-in-out;
   box-shadow: 3px 3px 6px hsl(210, 100%, 70%);
 }
 
@@ -242,7 +236,17 @@ h3 {
   width: 100%;
   text-align: center;
   opacity: 0;               
-  transition: ease-in 0.75s all;
+  transition: ease-in 1s all;
   top: -100px;
   position: absolute;         
+}
+
+@media (max-width: 800px) {
+  .section p {
+    font-size: 0.8em;
+  }
+  #logo-container p {
+    font-size: 1.6em;
+  }
+  
 }
