@@ -20,9 +20,15 @@ function showSection(sectionName) {
   
   if (Math.abs(targetOffset-currentOffset) > 1) {
     document.querySelector(".frieze").style.transition = "transform 1.5s ease-in ";
+    document.querySelectorAll(".header-container h1").forEach(header =>{
+      header.style.transition = "ease-in 1.5s all";
+    })
   }
   else {
     document.querySelector(".frieze").style.transition = "transform 1s ease-in ";
+    document.querySelectorAll(".header-container h1").forEach(header =>{
+      header.style.transition = "ease-in 1s all";
+    })
   }
 
   document.querySelector(".frieze").style.transform = `translateX(${targetOffset * -33.333}%)`;
