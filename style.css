@@ -103,6 +103,7 @@ body {
   flex: 1;
   transition: flex 1s ease-in-out, font-size 0.5s ease-in-out;
   box-shadow: 3px 3px 6px hsl(210, 100%, 70%);
+  font-size: 1.5em;
 }
 
 .nav-p:hover,
