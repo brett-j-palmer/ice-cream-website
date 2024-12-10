@@ -18,6 +18,13 @@ function showSection(sectionName) {
 
   let targetOffset = sectionOffsets[sectionName];
   
+  if (Math.abs(targetOffset-currentOffset) > 1) {
+    document.querySelector(".frieze").style.transition = "transform 1.5s ease-in ";
+  }
+  else {
+    document.querySelector(".frieze").style.transition = "transform 1s ease-in ";
+  }
+
   document.querySelector(".frieze").style.transform = `translateX(${targetOffset * -33.333}%)`;
   
   document.querySelectorAll(".header-container h1").forEach(header => {
