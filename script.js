@@ -1,3 +1,28 @@
+function onLoad() {
+  showSection('.take-orders')
+
+  document.querySelectorAll('.order-choices').forEach(orderChoicesDiv => {
+    orderChoicesDiv.addEventListener('click', event => {
+      if (event.target.tagName === 'P') {
+        orderChoicesDiv.querySelectorAll('p').forEach(p => {
+          p.style.backgroundColor = ''; 
+        });
+        event.target.style.backgroundColor = 'hsl(210, 100%, 80%)';
+      }
+    });
+  });
+
+
+  
+  let submitButton = document.querySelector('#submit-order-button')
+  
+  submitButton.addEventListener('click', () =>{
+    document.querySelectorAll('.take-orders p').forEach(p => {
+      p.style.backgroundColor = '';
+    });
+  });
+}
+
 currentOffset = 0
 
 function showSection(sectionName) {

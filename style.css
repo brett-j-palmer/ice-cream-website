@@ -110,7 +110,7 @@ body {
 .order-choices p:hover,
 #submit-order-button:hover,
 #add-item-button:hover {
-  background-color: hsl(210, 100%, 70%);
+  background-color: hsl(210, 100%, 90%);
 }
 
 .order-options,
@@ -209,6 +209,16 @@ h3 {
   border-radius: 30px;
 }
 
+/* @media (max-width: 800px) {
+  .section p {
+    font-size: 0.8em;
+  }
+  #logo-container p {
+    font-size: 1.6em;
+  }
+  
+} */
+
 #comments-container {
   border: none;
   display: block;
@@ -219,10 +229,6 @@ h3 {
   text-align: left;
   padding: 5%;
   max-width: 100%;
-}
-
-#comments:hover{
-  background-color: hsl(210, 100%, 95%);
 }
 
 .header-container {
@@ -243,11 +249,7 @@ h3 {
 }
 
 @media (max-width: 800px) {
-  .section p {
+  p {
     font-size: 0.8em;
   }
-  #logo-container p {
-    font-size: 1.6em;
-  }
-  
 }
